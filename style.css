@@ -1,0 +1,782 @@
+/* Google DM Sans font link up */
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+/* ********************
+******** Global CSS   ******* 
+************************/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: "DM Sans", sans-serif;
+    font-size: 16px;
+}
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+a, a:hover{
+    text-decoration: none;
+}
+
+/* now start our normal project css */
+
+/* Header Section css start here */
+
+/* logo part section css start here */
+
+header{
+    width: 100%;
+    background: url(img/banner.png) center center no-repeat ;
+    background-size: cover;
+    height: 100vh;
+}
+
+.navbar{
+    width: 100%;
+}
+
+.navbar .navbar-brand img{
+    width: 140px;
+}
+
+
+.navbar .navbar-collapse .navbar-nav .nav-item .nav-link{
+    color: white;
+    margin-right: 10px;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    transition: all 0.4s linear;
+}
+
+.navbar .navbar-collapse .navbar-nav .nav-item .nav-link::after{
+    content: '';
+    position: absolute;
+    border-bottom: 3px solid #578bd1;
+    width: 0%;
+    left: 0;
+    bottom: 0.3px;
+    transition: all 0.4s linear;
+    z-index: -1;
+
+}
+.navbar .navbar-collapse .navbar-nav .nav-item .nav-link:hover::after{
+    width: 100%;
+}
+.navbar .navbar-collapse .navbar-nav .nav-item .nav-link.active::after{
+    content: '';
+    position: absolute;
+    border-bottom: 3px solid #578bd1;
+    width: 100%;
+    left: 0;
+    bottom: 0.3px;
+    transition: all 0.4s linear;
+    z-index: -1;
+
+}
+.navbar .navbar-collapse .navbar-nav .nav-item .nav-link.active{
+    color: rgb(227, 227, 227);
+}
+
+
+/* logo part section css end here */
+
+/* Banner section css start here */
+.banner-section{
+    width: 100%;
+}
+.banner-section .cus-height{
+    height: 90vh;
+}
+
+.banner-section .row .content h5{
+    color: #008ed6;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.banner-section .row .content h1{
+    color: white;
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.banner-section .row .content p{
+    color: white;
+    font-weight: 300;
+    line-height: 26px;
+    margin-top: 20px;
+    margin-bottom: 58px;
+    width: 88%;
+}
+
+
+.banner-section .row .content .banner-btns a{
+    font-size: 14px;
+    color: white;
+    font-weight: 700;
+
+}
+.banner-section .row .content .banner-btns .btns-01{
+    background-color: #008ed6;
+    border: 1px solid #008ed6;
+    padding: 13px 20px;
+    border-radius: 4px;
+    margin-right: 15px;
+    transition: 0.7s;
+}
+.banner-section .row .content .banner-btns .btns-01:hover{
+    background-color: #ffffff00;
+    border: 1px solid #ebebeb;
+    transition: 0.7s;
+}
+
+.banner-section .row .content .banner-btns .btns-02{
+    border: 1px solid #ebebeb;
+    padding: 13px 20px;
+    border-radius: 4px;
+    transition: 0.7s;
+}
+.banner-section .row .content .banner-btns .btns-02:hover{
+    background-color: #008ed6;
+    border: 1px solid #008ed6;
+    transition: 0.7s;
+
+}
+
+
+/* Banner section css end here */
+
+/* Header Section css end here */
+
+/* Features section css start here */
+
+.featuressection{
+    width: 100%;
+    text-align: center;
+    padding-top: 50px;
+    margin-bottom: 38px;
+    border-bottom: 1px solid rgb(215, 215, 215);
+}
+
+.featuressection .row .featurescontent p{
+    color: #008ed6;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 7px;
+
+}
+.featuressection .row .featurescontent h4{
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.featuressection .featurescontent .underline {
+    margin-left: auto;
+    margin-right: auto;
+    width: 5%;
+    border-bottom: 3px solid #578bd1;
+    padding-bottom: 20px;
+    transition: 0.5s;
+}
+.featuressection:hover .underline {
+    width: 10%;
+    transition: 0.5s;
+}
+.featuressection .innersection{
+    padding-top: 50px;
+}
+.featuressection .innersection .row .icon i {
+    border: 1px solid #d6d6d6;
+    border-radius: 50%;
+    padding: 27px;
+    width: 86px;
+    height: 86px;
+    font-size: 30px;
+    color: #008ed6;
+}
+.featuressection .innersection .row .details h5{
+    font-size: 22px;
+    color: #1a1a1a;
+    padding-top: 20px;
+
+}
+.featuressection .innersection .row .details p{
+    color: #999999;
+    font-size: 16px;
+    line-height: 25px;
+    font-weight: 300;
+    width: 85%;
+    margin: 10px auto 55px auto;
+
+}
+
+/* Features section css end here */
+
+/* Dip-details css start here */
+
+.dip-details{
+    width: 100%;
+    margin-top: 70px;
+}
+.dip-details .row .pic{
+    text-align: right;
+}
+
+.dip-details .row .description{
+    padding-top: 55px;
+}
+
+.dip-details .row .description h6{
+    color: #008ed6;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 7px;
+}
+
+.dip-details .row .description h4{
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.dip-details .line-part {
+    margin-left: 0%;
+    width: 10%;
+    border-bottom: 3px solid #578bd1;
+    transition: 0.5s;
+    padding-bottom: 20px;
+}
+.dip-details:hover .line-part {
+    width: 25%;
+    transition: 0.5s;
+}
+
+
+.dip-details .row .description p{
+    font-size: 16px;
+    color: #999999;
+    font-weight: 300;
+    line-height: 25px;
+    width: 87%;
+    margin-bottom: 25px;
+    padding-top: 27px;
+}
+
+
+
+.dip-details .row .description .short-details .dtls{
+    margin-bottom: 6px;
+}
+
+.dip-details .row .description .short-details .dtls i{
+    color: #008ed6;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.dip-details .row .description .short-details .dtls span{
+    margin-left: 4px;
+}
+/* Dip-details css end here */
+
+/* customise section css start here */
+
+.facilities{
+    width: 100%;
+    background-color: #f2f2f2;
+    padding: 50px;
+}
+
+
+.facilities .row .inner-facilites h6{
+    color: #008ed6;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 7px;
+}
+
+.facilities .row .inner-facilites h4{
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.facilities .inner-facilites .underline {
+    margin-left: 0%;
+    width: 10%;
+    border-bottom: 3px solid #578bd1;
+    transition: 0.5s;
+    padding-bottom: 20px;
+}
+.facilities:hover .inner-facilites .underline{
+    width: 20%;
+    transition: 0.5s;
+}
+
+.facilities .row .inner-facilites p{
+    color: #999999;
+    font-size: 16px;
+    line-height: 25px;
+    font-weight: 300;
+    padding-top: 25px;
+    width: 87%;
+}
+
+/* customise section css end here */
+
+/* Testimonial section css start here */
+
+.testimonial-section{
+    width: 100%;
+    background: url(img/test.png) center center no-repeat;
+    background-size: cover;
+    padding: 50px 0px;
+}
+
+.testimonial-section .title{
+    text-align: center;
+}
+
+.testimonial-section .title h6{
+    font-size: 14px;
+    color: #008ed6;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 7px;
+
+}
+
+.testimonial-section .title h2{
+    color: white;
+    font-size: 35px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.testimonial-section .title .underline{
+    margin-left: auto;
+    margin-right: auto;
+    width: 5%;
+    border-bottom: 3px solid #578bd1;
+    padding-bottom: 10px;
+    transition: 0.5s;
+}
+.testimonial-section:hover .title .underline {
+    width: 10%;
+    transition: 0.5s;
+}
+
+.testimonial-section .owl-carousel{
+    padding-top: 48px;
+}
+.testimonial-section .owl-carousel .item p{
+    font-size: 16px;
+    line-height: 25px;
+    width: 78%;
+    color: rgb(230, 230, 230);
+    font-style: italic;
+    font-weight: 200;
+
+}
+.testimonial-section .owl-carousel .item .intro{
+    display: flex;
+}
+.testimonial-section .owl-carousel .item .intro .profile img{
+    width: 55px;
+    margin-right: 15px;
+}
+.testimonial-section .owl-carousel .item .intro .designation{
+    padding-top: 5px;
+}
+.testimonial-section .owl-carousel .item .intro .designation h6{
+    color: white;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.testimonial-section .owl-carousel .item .intro .designation h5{
+    color: white;
+    font-size: 14px;
+    font-weight: 400;
+}
+.owl-theme .owl-dots {
+    margin-top: 118px !important;
+}
+/* Testimonial section css end here */
+
+/* call to action css start here */
+
+.calltoaction{
+    width: 100%;
+    padding: 60px 0px 40px;
+    background-color: #15141a;
+}
+
+.calltoaction .details h2{
+    font-size: 35px;
+    color: white;
+    font-weight: 700;
+}
+
+.calltoaction .details h2 span{
+    font-weight: 400;
+    color: rgb(168, 168, 168);
+}
+
+.calltoaction .calltoaction-btns a{
+    font-size: 14px;
+    color: white;
+    font-weight: 700;
+}
+.calltoaction .calltoaction-btns .btns-01{
+    border: 1px solid #ebebeb;
+    padding: 13px 20px;
+    border-radius: 4px;
+    margin-right: 15px;
+    transition: 0.7s;
+}
+.calltoaction .calltoaction-btns .btns-01:hover{
+    background-color: #008ed6;
+    border: 1px solid #008ed6;
+    transition: 0.7s;
+
+}
+.calltoaction .calltoaction-btns .btns-02{
+    background-color: #008ed6;
+    border: 1px solid #008ed6;
+    padding: 13px 20px;
+    border-radius: 4px;
+    transition: 0.7s;
+}
+.calltoaction .calltoaction-btns .btns-02:hover{
+    background-color: #ffffff00;
+    border: 1px solid #ebebeb;
+    transition: 0.7s;
+}
+
+
+/* call to action css end here */
+
+/* price & plan section css start here */
+
+.cost{
+    width: 100%;
+    padding: 50px 0px;
+}
+
+.cost .title{
+    text-align: center;
+}
+
+.cost .title h6{
+    font-size: 14px;
+    color: #008ed6;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 7px;
+
+}
+
+.cost .title h2{
+    color: black;
+    font-size: 35px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.cost .title .underline{
+    margin-left: auto;
+    margin-right: auto;
+    width: 5%;
+    border-bottom: 3px solid #578bd1;
+    padding-bottom: 10px;
+    transition: 0.5s;
+}
+.cost:hover .title .underline {
+    width: 10%;
+    transition: 0.5s;
+}
+
+.cost .price-card{
+    text-align: center;
+    border: 1px solid #dfdfdf;
+    border-radius: 5px;
+    padding-bottom: 43px;
+    margin-top: 55px;
+
+}
+
+.cost .price-card .pc-header{
+    border-bottom: 1px solid #dfdfdf;
+}
+.cost .price-card .pc-header h3{
+    font-size: 20px;
+    font-weight: 700;
+    padding: 25px 22px;
+    transition: 0.7s;
+}
+
+.cost .price-card .pc-body {
+    border-bottom: 1px solid #dfdfdf;
+    padding: 30px 22px 14px;
+    transition: 0.7s;
+}
+.cost .price-card .pc-body h2{
+    font-size: 40px;
+    font-weight: 700;
+    margin: 0px;
+}
+
+
+.cost .price-card .pc-footer p{
+    color: #999999;
+    font-size: 16px;
+    line-height: 25px;
+    font-weight: 400;
+    padding: 20px 30px 30px;
+}
+
+
+.cost .price-card .pc-footer .footer-btns a{
+    padding: 12px 40px;
+    font-size: 14px;
+    color: #578bd1;
+    border: 1px solid #ebebeb;
+    border-radius: 5px;
+    font-weight: 700;
+    transition: 0.7s;
+}
+
+.price-card:hover .pc-header h3{
+    transition: 0.7s;
+    color: #008ed6;
+
+}
+.price-card:hover .pc-body{
+    background-color: #008ed6;
+    color: white;
+    transition: 0.7s;
+}
+
+.price-card:hover .pc-footer .footer-btns a{
+    transition: 0.7s;
+    background: #008ed6;
+    color: white;
+}
+
+
+
+/* price & plan section css end here */
+
+/* contact section css start here */
+
+.contact{
+    width: 100%;
+    background-color: #ededed;
+    padding: 50px 0px 0px;
+    text-align: center;
+}
+.contact .title{
+    text-align: center;
+}
+.contact .title h6{
+    font-size: 14px;
+    color: #008ed6;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 7px;
+
+}
+
+.contact .title h2{
+    color: black;
+    font-size: 35px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.contact .title .underline{
+    margin-left: auto;
+    margin-right: auto;
+    width: 5%;
+    border-bottom: 3px solid #578bd1;
+    padding-bottom: 10px;
+    transition: 0.5s;
+}
+.contact:hover .title .underline {
+    width: 10%;
+    transition: 0.5s;
+}
+
+.contact .inner-contact{
+    padding-top: 40px;
+}
+
+.contact .inner-contact i{
+    font-size: 29px;
+    color: #578bd1;
+    padding-bottom: 10px;
+}
+
+.contact .inner-contact p{
+    color: #999999;
+    font-size: 16px;
+    line-height: 25px;
+    font-weight: 400;
+}
+
+form{
+    padding-top: 100px;
+}
+
+.contact .form-part {
+    background-color: #15141a;
+    position: relative;
+    padding: 70px 0px 50px;
+    width: 65%;
+    margin: 0 auto -94px;
+    z-index: 1;
+}
+
+.contact .form-part .inner-form{
+    display: flex;
+    padding: 0px 30px;
+    
+}
+
+.contact .form-part .inner-form .left{
+    width: 50%;
+    padding: 5px;
+    padding-right: 12px;
+}
+.contact .form-part .inner-form .left .input-group{
+    margin-bottom: 23px;
+
+}
+
+.contact .form-part .inner-form .left .input-group .form-control{
+    padding: 15px 8px;
+    background-color: #15141a;
+    color: rgb(180, 175, 175);
+    border: var(--bs-border-width) solid #999999;
+   
+    
+}
+.contact .form-part .inner-form .left .input-group .form-control:focus{
+    background-color: white;
+    color: rgb(180, 175, 175);
+    
+}
+.form-control::placeholder{
+    color: #a8a8a8 !important;
+}
+.contact .form-part .inner-form .left .input-group .form-control::placeholder{
+    /* color: #dee2e6; */
+    font-weight: 500;
+    opacity: 0.8;
+}
+
+
+.contact .form-part .inner-form .right{
+    width: 50%;
+    padding: 5px;
+    padding-left: 12px;
+}
+.contact .form-part .inner-form .right .input-group .form-control{
+    background-color: #15141a;
+    padding: 13px 8px 48px;
+    color: rgb(180, 175, 175);
+    margin-bottom: 24px;
+    border: var(--bs-border-width) solid #999999;
+    
+}
+.contact .form-part .inner-form .right .input-group .form-control:focus{
+    background-color: white;
+    /* color: black; */
+    color: rgb(180, 175, 175);
+    
+}
+.contact .form-part .inner-form .right .input-group .form-control::placeholder{
+    /* color: #dee2e6; */
+    font-weight: 500;
+    opacity: 0.8;
+}
+
+.contact .form-part .right .form-btns{
+    text-align: end;
+    /* padding-top: 4px;
+    padding-bottom: 12px; */
+}
+
+.contact .form-part .right .form-btns .btn{
+    background-color: #008ed6;
+    border: 1px solid #008ed6;
+    border-radius: 4px;
+    color: white;
+    padding: 14px 157px;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 600;
+    transition: 0.7s;
+}
+
+.contact .form-part .right .form-btns .btn:hover{
+    background-color: transparent;
+    border: 1px solid #999999 !important;
+    border-radius: 4px;
+    transition: 0.7s;
+}
+
+/* contact section css end here */
+
+/* Map section css start here */
+
+.map-section{
+    width: 100%;
+    margin-bottom: -10px;
+}
+.map-section iframe{
+    width: 100%;
+    /* this code we will use if we want to night mode maps version
+    filter: invert(100%); */
+}
+/* Map section css end here */
+
+/* Footer section css start here */
+
+footer{
+    background-color: #15141a;
+    padding: 40px 0px 25px;
+    text-align: center;
+}
+
+footer .inner-footer .footer-icon i{
+    font-size: 20px;
+    margin-right: 20px;
+    transition: 0.7s;
+    color: #7e7e7e
+}
+
+footer .inner-footer .footer-icon i:hover{
+    color: #008ed6;
+    transition: 0.7s;
+}
+
+footer .inner-footer p{
+    color: #999999;
+    font-size: 16px;
+    line-height: 25px;
+    font-weight: 300;
+    padding-top: 20px;
+    text-transform: uppercase;
+}
+/* Footer section css end here */
